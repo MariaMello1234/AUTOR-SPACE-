@@ -1,25 +1,39 @@
 function curtirLivro(nomeLivro) {
-    alert(`Você curtiu o livro: ${nomeLivro} ❤️`);
+    alert("Você curtiu: " + nomeLivro + " ❤️");
 }
 
-const form = document.getElementById("resenhaForm");
+const formResenha = document.getElementById("resenhaForm");
 const listaResenhas = document.getElementById("listaResenhas");
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+formResenha.addEventListener("submit", function(e) {
+
+    e.preventDefault();
 
     const nome = document.getElementById("nome").value;
     const comentario = document.getElementById("comentario").value;
 
-    const novaResenha = document.createElement("div");
-    novaResenha.classList.add("resenha");
+    const div = document.createElement("div");
 
-    novaResenha.innerHTML = `
+    div.classList.add("resenha");
+
+    div.innerHTML = `
         <h4>${nome}</h4>
         <p>${comentario}</p>
     `;
 
-    listaResenhas.prepend(novaResenha);
+    listaResenhas.prepend(div);
 
-    form.reset();
+    formResenha.reset();
+});
+
+document
+.getElementById("formCadastro")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert(
+        "Cadastro realizado com sucesso!"
+    );
+
 });
