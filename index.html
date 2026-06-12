@@ -1,1 +1,91 @@
-# AUTOR-SPACE-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube da Leitura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Clube da Leitura</h1>
+        <p>Descubra livros, compartilhe opiniões e conecte-se com leitores da sua faixa etária.</p>
+    </header>
+
+    <nav>
+        <a href="#livros">Livros</a>
+        <a href="#resenhas">Resenhas</a>
+        <a href="#comunidade">Comunidade</a>
+    </nav>
+
+    <main>
+        <section id="livros">
+            <h2>Livros em Destaque</h2>
+
+            <div class="livros-container">
+                <div class="livro">
+                    <h3>O Pequeno Príncipe</h3>
+                    <p>Uma história emocionante sobre amizade, imaginação e crescimento.</p>
+                    <button onclick="curtirLivro('O Pequeno Príncipe')">Gostei ❤️</button>
+                </div>
+
+                <div class="livro">
+                    <h3>Harry Potter</h3>
+                    <p>Uma aventura mágica cheia de desafios e amizades inesquecíveis.</p>
+                    <button onclick="curtirLivro('Harry Potter')">Gostei ❤️</button>
+                </div>
+
+                <div class="livro">
+                    <h3>A Culpa é das Estrelas</h3>
+                    <p>Um romance emocionante sobre amor e superação.</p>
+                    <button onclick="curtirLivro('A Culpa é das Estrelas')">Gostei ❤️</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenhas">
+            <h2>Compartilhe sua Resenha</h2>
+
+            <form id="resenhaForm">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+
+                <textarea
+                    id="comentario"
+                    placeholder="Escreva sua opinião sobre um livro..."
+                    required
+                ></textarea>
+
+                <button type="submit">Publicar Resenha</button>
+            </form>
+
+            <div id="listaResenhas"></div>
+        </section>
+
+        <section id="comunidade">
+            <h2>Comunidade</h2>
+            <p>
+                Converse com leitores da sua faixa etária, troque recomendações
+                e participe de debates sobre seus livros favoritos.
+            </p>
+
+            <div class="chat-info">
+                <h3>Temas Populares</h3>
+                <ul>
+                    <li>Fantasia</li>
+                    <li>Romance</li>
+                    <li>Ficção Científica</li>
+                    <li>Desenvolvimento Pessoal</li>
+                    <li>Mistério</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Clube da Leitura - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
