@@ -161,3 +161,29 @@ footer{
     }
 
 }
+#publicar-livro{
+    margin-top:20px;
+}
+
+#biblioteca-comunidade{
+    margin-top:20px;
+}
+
+.livro-comunidade{
+    background:white;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    border-left:5px solid #6C63FF;
+}
+
+.livro-comunidade h3{
+    color:#6C63FF;
+    margin-bottom:10px;
+}
+
+.livro-comunidade button{
+    margin-right:10px;
+    margin-top:10px;
+}
