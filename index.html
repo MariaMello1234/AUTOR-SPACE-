@@ -248,3 +248,57 @@
 
 </body>
 </html>
+<section id="publicar-livro">
+
+    <h2>📚 Publicar um Livro</h2>
+
+    <form id="livroForm">
+
+        <input
+            type="text"
+            id="tituloLivro"
+            placeholder="Título do Livro"
+            required
+        >
+
+        <input
+            type="text"
+            id="autorLivro"
+            placeholder="Nome do Autor"
+            required
+        >
+
+        <input
+            type="text"
+            id="categoriaLivro"
+            placeholder="Categoria"
+            required
+        >
+
+        <textarea
+            id="descricaoLivro"
+            placeholder="Conte sobre seu livro..."
+            required
+        ></textarea>
+
+        <input
+            type="file"
+            id="capaLivro"
+            accept="image/*"
+        >
+
+        <button type="submit">
+            Publicar Livro
+        </button>
+
+    </form>
+
+</section>
+
+<section id="biblioteca-comunidade">
+
+    <h2>🌟 Livros Publicados pela Comunidade</h2>
+
+    <div id="listaLivros"></div>
+
+</section>
