@@ -1,91 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube da Leitura</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LumiLeitura - Comunidade de Leitores</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>📚 Clube da Leitura</h1>
-        <p>Descubra livros, compartilhe opiniões e conecte-se com leitores da sua faixa etária.</p>
-    </header>
+<header>
+    <div class="logo">
+        📚 LumiLeitura
+    </div>
 
-    <nav>
-        <a href="#livros">Livros</a>
-        <a href="#resenhas">Resenhas</a>
-        <a href="#comunidade">Comunidade</a>
-    </nav>
+    <div class="pesquisa">
+        <input type="search" placeholder="Pesquisar livros, autores ou categorias...">
+    </div>
 
-    <main>
-        <section id="livros">
-            <h2>Livros em Destaque</h2>
+    <div class="botoes">
+        <button>Entrar</button>
+        <button>Cadastrar</button>
+    </div>
+</header>
 
-            <div class="livros-container">
-                <div class="livro">
-                    <h3>O Pequeno Príncipe</h3>
-                    <p>Uma história emocionante sobre amizade, imaginação e crescimento.</p>
-                    <button onclick="curtirLivro('O Pequeno Príncipe')">Gostei ❤️</button>
-                </div>
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#livros">Livros</a>
+    <a href="#posts">Posts</a>
+    <a href="#categorias">Categorias</a>
+    <a href="#resenhas">Resenhas</a>
+    <a href="#comunidade">Comunidade</a>
+</nav>
 
-                <div class="livro">
-                    <h3>Harry Potter</h3>
-                    <p>Uma aventura mágica cheia de desafios e amizades inesquecíveis.</p>
-                    <button onclick="curtirLivro('Harry Potter')">Gostei ❤️</button>
-                </div>
+<section class="hero" id="inicio">
+    <h1>Bem-vindo ao LumiLeitura</h1>
 
-                <div class="livro">
-                    <h3>A Culpa é das Estrelas</h3>
-                    <p>Um romance emocionante sobre amor e superação.</p>
-                    <button onclick="curtirLivro('A Culpa é das Estrelas')">Gostei ❤️</button>
-                </div>
-            </div>
-        </section>
+    <p>
+        Descubra livros, compartilhe opiniões,
+        participe de clubes de leitura e conecte-se
+        com leitores da sua faixa etária.
+    </p>
+</section>
 
-        <section id="resenhas">
-            <h2>Compartilhe sua Resenha</h2>
+<section id="livros">
 
-            <form id="resenhaForm">
-                <input type="text" id="nome" placeholder="Seu nome" required>
+    <h2>📖 Livros em Destaque</h2>
 
-                <textarea
-                    id="comentario"
-                    placeholder="Escreva sua opinião sobre um livro..."
-                    required
-                ></textarea>
+    <div class="cards">
 
-                <button type="submit">Publicar Resenha</button>
-            </form>
+        <div class="card">
+            <h3>O Pequeno Príncipe</h3>
+            <p>Uma história sobre amizade e imaginação.</p>
+            <button onclick="curtirLivro('O Pequeno Príncipe')">
+                ❤️ Curtir
+            </button>
+        </div>
 
-            <div id="listaResenhas"></div>
-        </section>
+        <div class="card">
+            <h3>Harry Potter</h3>
+            <p>Uma aventura mágica cheia de desafios.</p>
+            <button onclick="curtirLivro('Harry Potter')">
+                ❤️ Curtir
+            </button>
+        </div>
 
-        <section id="comunidade">
-            <h2>Comunidade</h2>
-            <p>
-                Converse com leitores da sua faixa etária, troque recomendações
-                e participe de debates sobre seus livros favoritos.
-            </p>
+        <div class="card">
+            <h3>Dom Casmurro</h3>
+            <p>Um clássico da literatura brasileira.</p>
+            <button onclick="curtirLivro('Dom Casmurro')">
+                ❤️ Curtir
+            </button>
+        </div>
 
-            <div class="chat-info">
-                <h3>Temas Populares</h3>
-                <ul>
-                    <li>Fantasia</li>
-                    <li>Romance</li>
-                    <li>Ficção Científica</li>
-                    <li>Desenvolvimento Pessoal</li>
-                    <li>Mistério</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+    </div>
 
-    <footer>
-        <p>© 2025 Clube da Leitura - Todos os direitos reservados.</p>
-    </footer>
+</section>
 
-    <script src="script.js"></script>
+<section id="posts">
+
+    <h2>📰 Posts Recentes</h2>
+
+    <div class="post">
+        <h3>Minha opinião sobre Harry Potter</h3>
+        <p>Publicado há 2 horas.</p>
+    </div>
+
+    <div class="post">
+        <h3>Melhores mangás para iniciantes</h3>
+        <p>Publicado há 5 horas.</p>
+    </div>
+
+</section>
+
+<section id="categorias">
+
+    <h2>🎯 Categorias por Idade</h2>
+
+    <div class="categorias">
+
+        <div class="categoria infantil">
+            <h3>👶 6 a 10 anos</h3>
+            <ul>
+                <li>Histórias ilustradas</li>
+                <li>Contos infantis</li>
+                <li>Comentários moderados</li>
+                <li>Interface colorida</li>
+            </ul>
+        </div>
+
+        <div class="categoria juvenil">
+            <h3>🧒 11 a 14 anos</h3>
+            <ul>
+                <li>Literatura juvenil</li>
+                <li>Mangás</li>
+                <li>HQs</li>
+                <li>Clubes de leitura</li>
+                <li>Fóruns de discussão</li>
+            </ul>
+        </div>
+
+        <div class="categoria teen">
+            <h3>🧑 15 a 18 anos</h3>
+            <ul>
+                <li>Ficção</li>
+                <li>Fantasia</li>
+                <li>Desenvolvimento pessoal</li>
+                <li>Resenhas</li>
+                <li>Debates literários</li>
+            </ul>
+        </div>
+
+        <div class="categoria adulto">
+            <h3>👨 19+</h3>
+            <ul>
+                <li>Literatura clássica</li>
+                <li>Negócios</li>
+                <li>Educação</li>
+                <li>Filosofia</li>
+                <li>Ciências</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="cadastro">
+
+    <h2>📝 Cadastro</h2>
+
+    <form id="formCadastro">
+
+        <input type="text" placeholder="Nome completo" required>
+
+        <input type="email" placeholder="E-mail" required>
+
+        <input type="password" placeholder="Senha" required>
+
+        <input type="date" required>
+
+        <input type="file" accept="image/*">
+
+        <button type="submit">
+            Criar Conta
+        </button>
+
+    </form>
+
+</section>
+
+<section id="resenhas">
+
+    <h2>✍️ Compartilhe uma Resenha</h2>
+
+    <form id="resenhaForm">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            required
+        >
+
+        <textarea
+            id="comentario"
+            placeholder="Escreva sua opinião..."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Publicar Resenha
+        </button>
+
+    </form>
+
+    <div id="listaResenhas"></div>
+
+</section>
+
+<section id="comunidade">
+
+    <h2>👥 Comunidade</h2>
+
+    <p>
+        Converse com leitores da sua idade,
+        participe de grupos de estudo,
+        desafios de leitura e debates literários.
+    </p>
+
+    <div class="temas">
+
+        <h3>Temas Populares</h3>
+
+        <ul>
+            <li>Fantasia</li>
+            <li>Romance</li>
+            <li>Mistério</li>
+            <li>Ficção Científica</li>
+            <li>Desenvolvimento Pessoal</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="seguranca">
+
+    <h2>🔒 Segurança</h2>
+
+    <ul>
+        <li>Criptografia de senhas (bcrypt)</li>
+        <li>Recuperação de senha por e-mail</li>
+        <li>Verificação de e-mail</li>
+        <li>Proteção de dados dos usuários</li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 LumiLeitura - Comunidade de Leitores
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
