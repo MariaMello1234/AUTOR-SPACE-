@@ -1,1 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #5b3cc4;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background: #4328a0;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #5b3cc4;
+}
+
+.livros-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.livro {
+    flex: 1;
+    min-width: 250px;
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #5b3cc4;
+}
+
+button {
+    background: #5b3cc4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #4328a0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.resenha {
+    background: #eef1ff;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.chat-info ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+footer {
+    background: #5b3cc4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
